@@ -1,8 +1,6 @@
 "use client";
 import { Builder } from "@builder.io/react";
 import HeaderOne from "@/components/headers/HeaderOne";
-import TopNews from "@/components/homes/home-six/TopNews";
-import FooterThree from "@/layouts/footers/FooterThree";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import Category from "@/components/common/Category";
 import Newsletter from "@/components/common/Newsletter";
@@ -10,8 +8,6 @@ import LatestPostSidebar from "@/components/common/LatestPostSidebar";
 import FooterNews from "@/components/common/FooterNews";
 import ScrollToTop from "@/components/common/ScrollToTop";
 import ThemeToggler from "@/components/common/ThemeToggler";
-import RecentPost from "@/components/homes/home-three/RecentPost";
-import BlogDetailsContent from "@/components/blogs/blog-details/BlogDetailsContent";
 
 export function registerComponents() {
   Builder.registerComponent(HeaderOne, {
@@ -24,25 +20,7 @@ export function registerComponents() {
     ],
   });
 
-  Builder.registerComponent(TopNews, {
-    name: "TopNews",
-    inputs: [{ name: "data", type: "object" }],
-  });
 
-  Builder.registerComponent(FooterThree, {
-    name: "FooterThree",
-    inputs: [],
-  });
-
-  Builder.registerComponent(RecentPost, {
-    name: "RecentPost",
-    inputs: [{ name: "data", type: "object" }],
-  });
-
-  Builder.registerComponent(BlogDetailsContent, {
-    name: "BlogDetailsContent",
-    inputs: [{ name: "data", type: "object" }],
-  });
 
   Builder.registerComponent(Breadcrumbs, {
     name: "Breadcrumbs",
