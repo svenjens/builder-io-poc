@@ -21,18 +21,6 @@ export default function BuilderComponent() {
       setContent({
         title: 'Builder.io POC',
         content: [
-          { 
-            component: { 
-              name: 'HeaderOne', 
-              options: { 
-                logo: 'https://cdn.builder.io/api/v1/image/assets/default-logo.png',
-                logoAlt: 'My Publishing Portal',
-                whiteLogo: 'https://cdn.builder.io/api/v1/image/assets/default-logo-white.png',
-                whiteLogoAlt: 'My Publishing Portal'
-              } 
-            } 
-          },
-          { component: { name: 'TopNews', options: { data: homeSixData.filter(item => item.page === 'today_post') } } },
           { component: { name: 'RecentPost', options: { data: homeThreeData.filter(item => item.page === 'editor_post') } } },
           { component: { name: 'BlogDetailsContent', options: { data: innerBlogData.filter(item => item.page === 'blog_1')[0] } } },
           { 
